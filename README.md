@@ -1,2 +1,3 @@
-# graficos-de-fun-es
-primeira versão do projeto, ainda não é funcional, mais já é uma boa amostra do projeto 
+ <h1>graficos de funções</h1>
+
+   Este projeto tem como objetivo mostrar de uma forma visual o grafico de algumas fuções matematica.
