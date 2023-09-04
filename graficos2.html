@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="graficos2.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Graficos das funções matematicas
+        </h1>
+    </header>
+
+    <div id="formulario">
+        <div>
+            <select name="tipos" id="tipos">
+                <option value="afim">afim</option>
+                <option value="exponencial" >exponencial</option>
+            </select> 
+            <div id="formula">
+                a + b * intervalo
+            </div>  
+        </div>
+
+            <br>
+
+        <div>
+            <label for="espaco">intervalo</label>
+            <input type="number" name="espaco" id="espaco">
+
+            <br>
+
+            <label for="a">variavel a</label>
+            <input type="number" name="a" id="a">
+            
+            <br>
+            
+            <label for="b">variavel b</label>
+            <input type="number" name="b" id="b">  
+        </div>
+
+            <br>
+
+        <div>    
+            <button id="gerar">Gerar</button>
+        </div>
+            
+    </div>
+
+    <br>
+
+    <div id="div_grafico">
+        <canvas id="myChart"></canvas>
+    </div>
+      
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
+    <script src="graficos2.js"></script>
+</body>
+</html>
