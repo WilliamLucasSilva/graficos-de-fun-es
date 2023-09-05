@@ -33,16 +33,19 @@ botao.addEventListener("click", () => {
     let valor = ''
     let a = Number(numero_a.value)
     let b = Number(numero_b.value)
-    intervalo = espaço.value
-
-        //operações
     let colunas = obtem_colunas(intervalo)
-
-    if(tipo == 'afim'){
-        valor = funcao_afim(a,b)
-    }else if(tipo == 'exponencial'){
-        valor = funcao_exponencial(a,b)
-    }
+    intervalo = espaço.value
+    
+    //operações
+    if (intervalo > 100) {
+        console.log(`erro`)
+    }else if(intervalo < 100){
+            if(tipo == 'afim'){
+                valor = funcao_afim(a,b)
+            }else if(tipo == 'exponencial'){
+                valor = funcao_exponencial(a,b)
+            }
+        }
     
 
         //saida
